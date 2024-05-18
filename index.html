@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .special-1 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .special-2 {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    .special-3 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .special-4 {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.special {
+    width: 100%;
+}
+
+.special-2x1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.special-3x1 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.special-2x2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.special-1x2 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Special elements -->
+        <img style="width: 200px; height: 150px;" src="img/img1.jpg" class="special special-2x1" alt="Special Image">
+        <img style="width: 200px; height: 150px;"  src="img/img2.png" class="special special-3x1" alt="Special Image">
+        <img style="width: 200px; height: 150px;"  src="img/img3.jpg" class="special special-2x2" alt="Special Image">
+        <img style="width: 200px; height: 150px;"  src="img/img4.jpg" class="special special-1x2" alt="Special Image">
+        <!-- Regular images -->
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+        <img style="width: 200px; height: 150px;"  src="img/img5.jpg" alt="Regular Image">
+    </div>
+</body>
+</html>
